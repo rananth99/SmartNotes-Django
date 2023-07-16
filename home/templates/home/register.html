@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST" style="text-align: left;margin: 0 auto;width: 600px;">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div style="display: flex;justify-content: center;">
+        <input type="submit" style="align-items: center;" class="btn btn-primary my-5" name="Submit"/>
+    </div>
+</form>
+{% endblock %}
